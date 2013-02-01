@@ -138,9 +138,7 @@ class socialize_this {
         <a href="?page=socialize-this&module=settings"><?php _e('Settings', 'st_plugin'); ?></a> |
         <a href="?page=socialize-this&module=social_widgets"><?php _e('Social Widgets', 'st_plugin'); ?></a> |
         <a href="?page=socialize-this&module=open_graph"><?php _e('Open Graph', 'st_plugin'); ?></a> |
-        <a href="?page=socialize-this&module=advanced_functions"><?php _e('Advanced Functions/Settings', 'st_plugin'); ?></a> |
-        <a href="http://www.fullondesign.co.uk/projects/socialize-this/faq" target="_blank"><?php _e('FAQ\'s', 'st_plugin'); ?></a>  
-        <?php $this->st_adm_donate(); ?>
+        <a href="?page=socialize-this&module=advanced_functions"><?php _e('Advanced Functions/Settings', 'st_plugin'); ?></a>
         </div>
 <?php
     }
@@ -152,10 +150,6 @@ class socialize_this {
     		<p><?php _e('I am always happy to recieve feedback &amp; give you a little helping hand. On Twitter I\'m');?> <a href="http://twitter.com/#!/rogem002">@Rogem002</a>.</p>
     	</div>
     	<?php
-    }
-
-    private function st_adm_donate() {
-            
     }
 
     // st_adm_notice() - If their is a notice...display it!
@@ -214,7 +208,13 @@ class socialize_this {
                  <td><?php echo $facebook; ?> <?php _e('Likes', 'st_plugin'); ?></td>
                 <td><a href="http://www.reddit.com/<?php echo (isset($reddit['permalink']) ? $reddit['permalink'] : ''); ?>"><?php _e('Score', 'st_plugin'); ?> <?php echo $this->st_ifBlankPutZero($reddit['score']); ?> (<?php echo $this->st_ifBlankPutZero($reddit['num_comments']); ?> <?php _e('Comments', 'st_plugin'); ?>)</a></td>
                     <td><?php echo $googleplusone; ?> +1's</td>
-                <td><a href="admin.php?page=socialize-this&module=advanced_functions&socialiseID=<?php echo $socialPost->ID; ?>"><?php echo date("F j, Y, g:i a", strtotime(get_post_meta($socialPost->ID, 'st_last_socialized', true))); ?></a></td>
+                <td><a href="admin.php?page=socialize-this&module=advanced_functions&socialiseID=<?php echo $socialPost->ID; ?>"><?php 
+                if(get_post_meta($socialPost->ID, 'st_last_socialized', true)){
+	                echo date("F j, Y, g:i a", get_post_meta($socialPost->ID, 'st_last_socialized', true)); 
+                } else {
+	                 _e('Refresh', 'st_plugin'); 
+                }
+                ?></a></td>
                 </tr>
 <?php } ?>
 		</tbody>
