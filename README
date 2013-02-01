@@ -54,6 +54,7 @@ Adds Social Widgets (icons) to your blog posts. It also can update your twitter 
 
 == Changelog ==
 = 2.3.0 =
+	* Removing donate button
 	* Fixing date bug in overview 
 = 2.2.4 =
 	* Fix for +1
