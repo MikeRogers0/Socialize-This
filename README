@@ -53,6 +53,8 @@ Adds Social Widgets (icons) to your blog posts. It also can update your twitter 
 4. The Widgets page.
 
 == Changelog ==
+= 2.3.0 =
+	* Fixing date bug in overview 
 = 2.2.4 =
 	* Fix for +1
 = 2.2.3 =

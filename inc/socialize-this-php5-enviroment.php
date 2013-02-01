@@ -155,10 +155,7 @@ class socialize_this {
     }
 
     private function st_adm_donate() {
-            echo '<form action="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5GKMJU4645GVY" method="post" class="donate" target="_blank">
-<p class="submit"><input type="submit" name="submit" value="' . __('Support Socialize This - Donate via PayPal') . '" class="button-primary"></p>
-</form>
-';
+            
     }
 
     // st_adm_notice() - If their is a notice...display it!
@@ -217,7 +214,7 @@ class socialize_this {
                  <td><?php echo $facebook; ?> <?php _e('Likes', 'st_plugin'); ?></td>
                 <td><a href="http://www.reddit.com/<?php echo (isset($reddit['permalink']) ? $reddit['permalink'] : ''); ?>"><?php _e('Score', 'st_plugin'); ?> <?php echo $this->st_ifBlankPutZero($reddit['score']); ?> (<?php echo $this->st_ifBlankPutZero($reddit['num_comments']); ?> <?php _e('Comments', 'st_plugin'); ?>)</a></td>
                     <td><?php echo $googleplusone; ?> +1's</td>
-                <td><a href="admin.php?page=socialize-this&module=advanced_functions&socialiseID=<?php echo $socialPost->ID; ?>"><?php echo date("F j, Y, g:i a", get_post_meta($socialPost->ID, 'st_last_socialized', true)); ?></a></td>
+                <td><a href="admin.php?page=socialize-this&module=advanced_functions&socialiseID=<?php echo $socialPost->ID; ?>"><?php echo date("F j, Y, g:i a", strtotime(get_post_meta($socialPost->ID, 'st_last_socialized', true))); ?></a></td>
                 </tr>
 <?php } ?>
 		</tbody>
