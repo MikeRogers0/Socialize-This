@@ -5,7 +5,7 @@
 */
 /*
 Plugin Name: Socialize This
-Plugin URI: http://www.fullondesign.co.uk/projects/socialize-this
+Plugin URI: https://github.com/MikeRogers0/Socialize-This
 Description: Adds social widgets to your blog posts. It also can update your twitter status when you publish a post.
 Version: 2.3.0
 Author: Mike Rogers
