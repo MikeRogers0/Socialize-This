@@ -10,7 +10,7 @@ Adds Social Widgets (icons) to your blog posts. It also can update your twitter 
 == Description ==
 <p>Socialize This is a WordPress plugin that allows the user to easily generate Social Widgets (Icons) and spread the word about their blog posts. It works out-of-the-box with little to no configuration required. </p>
 
-<p>If you have any questions or feedback, I'm <a href="http://twitter.com/#!/Rogem002">@Rogem002</a> on twitter.</p>
+<p>If you have any questions or feedback, I'm <a href="http://twitter.com/MikeRogers0">@MikeRogers0</a> on twitter.</p>
 
 <h3>Key Features</h3>
 <ul>
@@ -56,6 +56,7 @@ Adds Social Widgets (icons) to your blog posts. It also can update your twitter 
 = 2.3.0 =
 	* Removing donate button
 	* Fixing date bug in overview 
+	* Removed FAQ button - it was going ot a bad link.
 = 2.2.4 =
 	* Fix for +1
 = 2.2.3 =

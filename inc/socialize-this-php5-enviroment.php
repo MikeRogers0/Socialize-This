@@ -63,7 +63,7 @@ class socialize_this {
 
     public function extra_plugin_links($links, $file) {
         if ($file == 'socialize-this/socialize-this.php') {
-            $links[] = '<a href="http://twitter.com/#!/rogem002">@Rogem002</a>';
+            $links[] = '<a href="http://twitter.com/MikeRogers0">@MikeRogers0</a>';
         }
         return $links;
     }
@@ -147,7 +147,7 @@ class socialize_this {
     	?>
     	<div id="st_bottom_navagation">
     		<p><?php _e('Thank you for using Socialize This'); ?>  <?php echo ST_VERSION; ?>.</p>
-    		<p><?php _e('I am always happy to recieve feedback &amp; give you a little helping hand. On Twitter I\'m');?> <a href="http://twitter.com/#!/rogem002">@Rogem002</a>.</p>
+    		<p><?php _e('I am always happy to recieve feedback &amp; give you a little helping hand. On Twitter I\'m');?> <a href="http://twitter.com/MikeRogers0">@MikeRogers0</a>.</p>
     	</div>
     	<?php
     }
