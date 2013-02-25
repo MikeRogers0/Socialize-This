@@ -3,7 +3,7 @@ Contributors: Rogem002
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5N4LD2WMABVWY
 Tags: analytics, social, icons, twitter, facebook, like, +1
 Requires at least: 3.2.1
-Tested up to: 3.2.1
+Tested up to: 3.5.1
 
 Adds Social Widgets (icons) to your blog posts. It also can update your twitter status when you publish a post and can provide analytical data.
 

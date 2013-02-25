@@ -52,6 +52,8 @@ Adds Social Widgets (icons) to your blog posts. It also can update your twitter 
 4. The Widgets page.
 
 == Changelog ==
+= 2.3.1 =
+	* Updating twitter feautres to use API version 1.1.
 = 2.3.0 =
 	* Removing donate button
 	* Fixing date bug in overview 
@@ -91,8 +93,11 @@ Adds Social Widgets (icons) to your blog posts. It also can update your twitter 
 	
 == Upgrade Notice ==
 
+= 2.3.1 =
+Updates twitter API to use version 1.1 (version 1 is being deprecated soon).
+
 = 2.3.0 =
-Fixes outdated support links. This will be the last of the 2.X version.
+Fixes outdated support links.
 
 = 2.2.4 =
 Fix for google +1 buttons.
